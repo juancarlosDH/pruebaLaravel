@@ -15,10 +15,4 @@ class Pelicula extends Model
 
 
 
-
-
-
-
-
-
 }

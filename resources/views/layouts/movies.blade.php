@@ -30,14 +30,14 @@
 
         <nav class="navigation">
           <ul class="izquierdos navigation-ul">
-            <a href="#"><li>Recientes</li></a>
-            <a href="peliculas.php"><li>Películas</li></a>
-            <a href="#"><li>Series</li></a>
+            <a href="/recientes"><li>Recientes</li></a>
+            <a href="/peliculas"><li>Películas</li></a>
+            <a href="/series"><li>Series</li></a>
           </ul>
           <ul class="derechos navigation-ul">
-            <a href="buscador.php"><li>Buscar</li></a>
+            <a href="/buscador"><li>Buscar</li></a>
             <a href="#"><li>Mi Lista</li></a>
-            <a href="login.php"><li>Login</li></a>
+            <a href="/login"><li>Login</li></a>
             <a href="/register"><li>Registro</li></a>
           </ul>
         </nav>
