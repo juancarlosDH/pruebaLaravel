@@ -8,7 +8,7 @@
           <div class="peliculas">
 
                 <h2>Unirme a Digital Movies</h2>
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                       <label for="name">Name</label>
@@ -16,17 +16,23 @@
                     </div>
                     <div class="form-group">
                       <label for="email">Email</label>
-                      <input type="email" class="form-control {{ $invalidError }}" id="email" aria-describedby="emailHelp" placeholder="Tu Email" name="email">
-                      <div class="invalid-feedback">{{ $errorEmail }}</div>
+                      <input type="text" class="form-control " id="email" aria-describedby="emailHelp" placeholder="Tu Email" name="email">
+                      <div class="invalid-feedback"></div>
                     </div>
                     <div class="form-group">
                       <label for="password">Password</label>
                       <input type="password" class="form-control" id="password" placeholder="Tu Password" name="password">
                     </div>
                     <div class="form-group">
-                      <label for="confirmar_password">Confirmar Password</label>
-                      <input type="password" class="form-control" id="confirmar_password" name="confirmar_password" placeholder="Confirmacion del Password">
+                      <label for="password_confirmation">Confirmar Password</label>
+                      <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirmacion del Password">
                     </div>
+                    <div class="form-group">
+                      <label for="avatar">Avatar</label>
+                      <input type="file" class="" id="avatar" name="avatar">
+                    </div>
+
+                    <?php var_dump($errors) ?>
 
                     <button type="submit" class="btn btn-primary">Unirme</button>
                   </form>

@@ -12,7 +12,9 @@
           <div class="titulo-nav">
                <h3>Peliculas en Digital Movies</h3>
                <div>
-                 <a href="/peliculas/nueva" class="btn btn-primary">Nueva</a>
+                   @if (Auth::check())
+                       <a href="/peliculas/nueva" class="btn btn-primary">Nueva</a>
+                   @endif
                </div>
          </div>
          <div class="sub-titulo">

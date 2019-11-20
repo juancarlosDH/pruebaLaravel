@@ -7,8 +7,8 @@
       <article class="nuevas" id="peliculas">
           <div class="peliculas">
             <h2>Login a Digital Movies</h2>
-            <form method="post">
-                
+            <form method="post" action="">
+
                 <div class="form-group">
                   <label for="email">Email</label>
                   <input type="email" class="form-control <?= $invalidError ?>" id="email" placeholder="Tu Email" name="email" value="<?= $email ?>">
