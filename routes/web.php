@@ -20,7 +20,7 @@ Route::get('/peliculas', 'PeliculaController@mostrarPeliculas');
 
 Route::get('/peliculas/nueva', 'PeliculaController@nueva')->middleware('is_admin');
 
-Route::post('/peliculas/nueva', 'PeliculaController@agregarPelicula');
+Route::post('/peliculas/nueva', 'PeliculaController@agregarPelicula')->middleware('is_admin');
 
 Route::get('/peliculas/{id}', 'PeliculaController@buscarPorId');
 
@@ -48,3 +48,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 /**/
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

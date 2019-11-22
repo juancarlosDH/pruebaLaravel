@@ -8,6 +8,12 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
+                    <div class="">
+                        {{ Auth::user()->email }}
+                    </div>
+                    <div class="">
+                        <img src="/storage/{{ Auth::user()->avatar }}" alt="">
+                    </div>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

@@ -19,7 +19,7 @@ class IsAdmin
         if ($user && $user->admin) {
             return $next($request);
         }
-        return Redirect::back();
+        return \Redirect::back();
     }
 
 
